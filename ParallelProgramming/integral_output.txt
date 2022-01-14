@@ -1,0 +1,95 @@
+
+OpenMP
+
+###### Function seq ######
+Thread	Time
+1	0.187311
+2	0.112672
+3	0.093482
+4	0.102516
+
+###### Function omp_fs ######
+Thread	Time
+1	0.14235
+2	0.107916
+3	0.0877116
+4	0.0641796
+
+###### Function omp ######
+Thread	Time
+1	0.138004
+2	0.0639091
+3	0.0437753
+4	0.0376064
+
+###### Function omp_reduce ######
+Thread	Time
+1	0.0579222
+2	0.0280717
+3	0.0210273
+4	0.0170728
+
+###### Function omp_reduce_dyn ######
+Thread	Time
+1	0.412372
+2	0.535005
+3	0.314131
+4	0.310838
+
+###### Function omp_atomic ######
+Thread	Time
+1	0.0606309
+2	0.0180855
+3	0.0133992
+4	0.0103645
+
+###### Function omp_cs ######
+Thread	Time
+1	0.0306404
+2	0.016282
+3	0.011809
+4	0.0107064
+
+###### Function omp_mtx ######
+Thread	Time
+1	0.0311996
+2	0.0169472
+3	0.0190161
+4	0.0116578
+
+CPP
+
+###### Function cpp ######
+Thread	Time
+1	0.0537716
+2	0.0523587
+3	0.0524015
+4	0.0510364
+
+###### Function cpp_cs ######
+Thread	Time
+1	0.0213504
+2	0.0178155
+3	0.0206666
+4	0.0112541
+
+###### Function cpp_atomic ######
+Thread	Time
+1	0.0104399
+2	0.0115248
+3	0.0099198
+4	0.0101698
+
+###### Function cpp_reduce ######
+Thread	Time
+1	0.0297341
+2	0.0294776
+3	0.0297508
+4	0.0310367
+
+###### Function cpp_reduce_barrier ######
+Thread	Time
+1	0.0118059
+2	0.0132362
+3	0.0120872
+4	0.0099507
