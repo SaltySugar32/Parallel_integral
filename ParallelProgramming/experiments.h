@@ -45,8 +45,8 @@ void run_experiments(experiment_result_t* results, float(*I)(float a, float b, f
 
 void print_experiment_result(const char* name, const experiment_result_t* r) {
 	printf("\n###### Function %s ######\n", name);
-	printf("Thread\tTime\n");
+	printf("Thread\tResult\t\tTime\n");
 	for (unsigned t = 1; t <= std::thread::hardware_concurrency(); ++t)
-		printf("%u\t%g\n", t, r[t - 1].time, r[0].time / r[t - 1].time);
+		printf("%u\t%g\t%g\n", t, r[t - 1].result, r[t - 1].time, r[0].time / r[t - 1].time);
 }
 
