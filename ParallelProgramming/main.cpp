@@ -43,8 +43,10 @@ void print_cpp(experiment_result_t* results) {
 	run_experiments(results, integrate_cpp_atomic);
 	print_experiment_result("cpp_atomic", results);
 
+	#if !defined( __GNUC__) || (__GNUC__ > 10)
 	run_experiments(results, integrate_cpp_reduce_1);
 	print_experiment_result("cpp_reduce", results);
+	#endif
 
 	run_experiments(results, integrate_cpp_reduce_2);
 	print_experiment_result("cpp_reduce_barrier", results);
